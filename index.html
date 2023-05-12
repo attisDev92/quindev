@@ -243,20 +243,32 @@
 				<li class="datos__contenedores">Quito - Ecuador</li>
 			</ul>
 		</div>
-		<form action="" class="formulario__contacto" id="form-contact">
+		<form class="formulario__contacto" id="form-contact" action="https://formsubmit.co/attis.alejandro™gmail.com" method="POST">
 			<fieldset>
 				<legend>Formulario de Contacto</legend>
+
 				<label for="nombre">Nombre</label>
-				<input type="text" id="nombre" placeholder="nombre"><br>
+				<input name="Nombre" type="text" id="nombre" placeholder="nombre">
+
 				<label for="apellido">Apellido</label>
-				<input type="text" id="apellido" placeholder="apellido"><br>
+				<input name="Apellido" type="text" id="apellido" placeholder="apellido">
+
 				<label for="telefono">Numero</label>
-				<input type="number" id="telefono" placeholder="0999999999"><br>
+				<input name="Celular" type="number" id="telefono" placeholder="0999999999">
+
 				<label for="mail">e-mail</label>
-				<input type="email" id="mail" placeholder="name@mail.com"><br>
-				<label for="mensaje-area">Mensaje</label><br>
-				<textarea name="mensaje" id="mensaje-area" cols="30" rows="10">mensaje</textarea><br>
-				<input type="submit" value="Enviar" id="enviar"><br>
+				<input name="mail" type="email" id="mail" placeholder="name@mail.com">
+
+				<label for="mensaje-area">Mensaje</label>
+				<textarea name="mensaje" id="mensaje-area" cols="30" rows="10">mensaje</textarea>
+
+				<input type="submit" value="Enviar" id="enviar">
+
+				<!-- configuracion API form  https://formsubmit.co-->
+				<input type="hidden" name="_subject" value="Nueva consulta desde website QuinDev">
+				<input type="hidden" name="_next" value="../index.html">
+				<input type="hidden" name="_captcha" value="false">
+
 			</fieldset>
 		</form>
 	</footer>
