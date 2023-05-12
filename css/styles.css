@@ -515,8 +515,8 @@ img {
 .clientes {
 	display: flex;
 	flex-flow: row nowrap;
-	background-color: #ff4d29b9;
-	margin: 2% 2% 3%;
+	background-color: var(--color-blanco);
+	margin: 2% 2%;
 	padding: 2em;
 	width: 25%;
 	height: auto;
@@ -526,10 +526,11 @@ img {
 }
 
 .clientes figure {
-	
+	width: 25%;
 }
 
 .clientes--texto {
+	width: 75%;
 	margin: 1em;
 }
 
@@ -538,6 +539,11 @@ img {
 	letter-spacing: 0.1em;
 	font-size: 1.3em;
 	margin-block: 1em;
+	color: var(--color-azul);
+}
+
+.clientes p {
+	color: var(--color-gris);
 }
 
 .contenedor__tecnologia {
@@ -559,21 +565,22 @@ img {
 
 .contendor__programas {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	height: 40%;
-	align-items: flex-start;
-	align-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 40%;
+    align-items: center;
 }
 
 .programas {
-	width: 20%;
-	height: 67%;
-	margin: 2em;
+	width: auto;
+    height: 6em;
+    margin: 2em;
 }
 
 .programas p {
 	font-style: oblique;
+    margin-block: 1em;
+    text-align: center;
 }
 
 /*contacto*/
